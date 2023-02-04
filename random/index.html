@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <title>Blog - Deb Academy</title>
+    <style>
+        * {
+            font-family: 'Inter', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-white px-5 md:px-8 lg:px-12 tracking-wide" id="bg">
+    <header>
+        <nav class="flex flex-row items-center justify-between py-4">
+            <a href="index.html" class="font-semibold text-xl md:text-2xl">Deb Academy</a>
+            <div>
+                <button id="new">
+                    <iconify-icon icon="el:file-new"></iconify-icon> 
+                    New
+                </button>
+                <button id="save">
+                    <iconify-icon icon="material-symbols:save-outline-sharp"></iconify-icon>
+                    Save
+                </button>
+                <button id="theme">
+                    <iconify-icon icon="material-symbols:light-mode-outline-sharp"></iconify-icon>
+                    <iconify-icon icon="ion:moon-outline"></iconify-icon> mode</button>
+            </div>
+            
+        </nav>
+        <h1 id="title" class="text-3xl font-bold w-full md:w-4/6 mx-auto"></h1>
+        <div class="">
+            <img src="" alt="" id="bannerImg" class="" />
+        </div>
+    </header>
+    <main class="w-full md:w-4/6 mx-auto">
+        <article id="article">
+            
+        </article>
+    </main>
+    <section class="w-full md:w-4/6 mx-auto mb-10 hidden" id="form">
+        <h2 class="text-xl capitalize font-semibold">new post</h2>
+        <form>
+            <input 
+            type="text" 
+            id="titleInput"
+            class="border rounded focus:border-2 focus:border-black block w-full my-5 focus:outline-none py-2 px-3"
+            placeholder="Enter title here..."
+            />
+            <textarea 
+            id="bodyInput"
+            class="border rounded focus:border-2 focus:border-black block w-full my-5 focus:outline-none py-2 px-3"
+            placeholder="Start typing here..."
+            ></textarea>
+        </form>
+    </section>
+    <script src="post.js"></script>
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://code.iconify.design/iconify-icon/1.0.3/iconify-icon.min.js"></script>
+    <link rel="stylesheet" href="./stylesheet.css"/>
+    <title>Blog - Deb Academy</title>
+</head>
+<body>
+   <header>
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="logo">Deb Academy</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-menu-item active">Blog</a>
+                <a href="dashboard.html" class="nav-menu-item">Dashboard</a>
+                <a href="#" class="nav-menu-icon">
+                    <iconify-icon icon="uil:facebook-f" ></iconify-icon>
+                </a>
+                <a href="#" class="nav-menu-icon">
+                    <iconify-icon icon="ph:instagram-logo" ></iconify-icon>
+                </a>
+                <a href="#" class="nav-menu-icon"><iconify-icon icon="ri:twitter-fill" ></iconify-icon></a>
+            </div>
+            <button class="icon-btn" id="menuBtn" onclick="openMobileMenu()">
+                <iconify-icon icon="ic:outline-menu"></iconify-icon>
+            </button>
+        </nav>
+   </header> 
+   <div class="mobile-menu" id="mobileMenu">
+        <button class="icon-btn absolute" onclick="closeMobileMenu()">
+            <iconify-icon icon="material-symbols:close"></iconify-icon>
+        </button>
+        <a href="index.html" class="mobile-menu-item active">Blog</a>
+        <a href="dashboard.html" class="mobile-menu-item">Dashboard</a>
+        <a href="#" class="mobile-menu-icon">
+            <iconify-icon icon="uil:facebook-f" ></iconify-icon>
+        </a>
+        <a href="#" class="mobile-menu-icon">
+            <iconify-icon icon="ph:instagram-logo" ></iconify-icon>
+        </a>
+        <a href="#" class="mobile-menu-icon"><iconify-icon icon="ri:twitter-fill" ></iconify-icon></a>
+   </div>
+   <main class="blog-posts">
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="./assets/profile-full-middleband-01-38-copy.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+                <time class="blog-date">5/29/19</time>
+                <h2 class="blog-card-title">Pastels</h2>
+                <p class="blog-text">Architectural spaces that leave the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="./blog/pastels.html" class="blog-url">read more</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="./assets/profile-full-middleband-01-38-copy.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+                <time class="blog-date">5/29/19</time>
+                <h2 class="blog-card-title">Pastels</h2>
+                <p class="blog-text">Architectural spaces that leave the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="./blog/pastels.html" class="blog-url">read more</a>
+            </div>
+        </div>
+        <div class="blog-card">
+            <div class="blog-img">
+                <img src="./assets/profile-full-middleband-01-38-copy.jpg" alt="" />
+            </div>
+            <div class="blog-content">
+                <time class="blog-date">5/29/19</time>
+                <h2 class="blog-card-title">Pastels</h2>
+                <p class="blog-text">Architectural spaces that leave the ground. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="./blog/pastels.html" class="blog-url">read more</a>
+            </div>
+        </div>
+   </main>
+   <footer>Made with &hearts; - Deb Academy</footer>
+   <script src="./js/script.js"></script>
+</body>
+</html>
